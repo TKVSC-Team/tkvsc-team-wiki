@@ -1,0 +1,47 @@
+{
+  "build": {
+    "sitemap": {
+      "baseUrl": "https://tkvsc.dev",
+      "priority": 1.0,
+      "changefreq": "weekly"
+    },
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/images/**",
+          "favicon.ico",
+          "logo.png",
+          "logo.svg"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern",
+      "templates/custom"
+    ],
+    "globalMetadata": {
+      "_appName": "TKVSC",
+      "_appTitle": "TKVSC",
+      "_enableSearch": true,
+      "_appLogoPath": "logo.png",
+      "_appFaviconPath": "favicon.ico",
+      "_appFooter": "<footer id=\"copyright\">© TKVSC-Team under the GPLv3 License</footer>",
+      "pdf": true
+    },
+    "postProcessors": [
+      "ExtractSearchIndex"
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+:root {
+    color-scheme: dark;
+    --tkvsc-bg: #0f0e0e;
+    --tkvsc-primary: #d46635;
+    --tkvsc-highlight: #ea7a53;
+    --tkvsc-shadow: #b55530;
+    --tkvsc-glow: rgba(212, 102, 53, 0.4);
+
+    --tkvsc-font-brand: Consolas, "Courier New", monospace;
+    --tkvsc-font-body: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    --bs-font-sans-serif: var(--tkvsc-font-body);
+    --bs-font-monospace: var(--tkvsc-font-brand);
+    --bs-body-bg: var(--tkvsc-bg);
+    --bs-body-bg-rgb: 15, 14, 14;
+    --bs-body-color: #e8e4e1;
+    --bs-link-color: var(--tkvsc-highlight);
+    --bs-link-hover-color: var(--tkvsc-primary);
+    --bs-emphasis-color: #ffffff;
+    --bs-border-color: #2a2624;
+    --bs-border-radius: 0.2rem;
+
+    --code-background: #1a1817;
+    --bs-code-color: var(--tkvsc-highlight);
+    --alert-tip-color: #49e463;
+    --alert-info-color: var(--tkvsc-highlight);
+    --alert-warn-color: #ed7741;
+    --alert-danger-color: #be3961;
+    --alert-important-color: var(--tkvsc-primary);
+}
+
+[data-bs-theme=dark],
+[data-bs-theme=light] {
+    --bs-body-bg: var(--tkvsc-bg);
+    --bs-body-bg-rgb: 15, 14, 14;
+    --bs-body-color: #e8e4e1;
+    --bs-secondary-bg: #171615;
+    --bs-tertiary-bg: #1f1c1b;
+    --bs-code-color: var(--tkvsc-highlight);
+    --code-background: #1a1817;
+}
+
+body {
+    font-family: var(--tkvsc-font-body);
+    font-weight: 400;
+}
+
+a {
+    color: var(--tkvsc-highlight);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--tkvsc-primary);
+}
+
+.plain {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+#main-title,
+#copyright,
+footer,
+.download-btn {
+    font-family: var(--tkvsc-font-brand);
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+#main-title {
+    color: var(--tkvsc-primary);
+}
+
+h1,
+h2 {
+    margin: 0 0 2rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0 0 1.3rem 0;
+}
+
+h4 {
+    margin: 0 0 1.3rem 0;
+}
+
+h5,
+h6 {
+    margin: 0 0 0.9rem 0;
+}
+
+li {
+    margin: 1.2vh 0;
+}
+
+hr {
+    margin: 2rem 0;
+    border-color: var(--bs-border-color);
+}
+
+code {
+    font-family: var(--tkvsc-font-brand);
+    font-weight: 700;
+    border-radius: var(--bs-border-radius);
+    padding: 0.2rem;
+    margin: 0.2rem 0;
+    background: var(--code-background);
+    font-size: 1.1rem;
+}
+
+video {
+    border-radius: var(--bs-border-radius);
+    max-width: 100% !important;
+}
+
+.content {
+    margin: 0 20vw;
+}
+
+.navbar,
+footer,
+header {
+    background-color: var(--tkvsc-bg) !important;
+    border-color: var(--bs-border-color) !important;
+}
+
+.navbar-brand {
+    color: var(--tkvsc-primary) !important;
+}
+
+/* Permanent dark mode — hide theme toggle */
+.dropdown:has(a[title="Change theme"]),
+a[title="Change theme"] {
+    display: none !important;
+}
+
+/* Patreon is not in Bootstrap Icons — use custom SVG via CSS mask */
+a[title="Patreon"] .bi-patreon::before {
+    content: "" !important;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask: url('patreon.svg') center / contain no-repeat;
+    -webkit-mask: url('patreon.svg') center / contain no-repeat;
+}
+
+#logo,
+.navbar-brand img {
+    width: 40px;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 60px var(--tkvsc-glow));
+}
+
+#landing-logo {
+    filter: drop-shadow(0 0 60px var(--tkvsc-glow));
+}
+
+#copyright {
+    text-align: center;
+    color: #9a9590;
+}
+
+#main-title {
+    letter-spacing: 0.08rem;
+    color: var(--tkvsc-primary);
+    text-shadow: 0 2px 24px var(--tkvsc-glow);
+}
+
+#download-btns {
+    margin: 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.download-btn {
+    margin: 0;
+    display: inline-block;
+    justify-self: center;
+    border-radius: var(--bs-border-radius);
+    padding: 1rem 1.25rem;
+    margin-right: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    box-shadow: none;
+    border: 1px solid var(--tkvsc-shadow);
+}
+
+.download-btn:hover {
+    text-decoration: underline;
+    box-shadow: none;
+}
+
+#download-main,
+#download-windows,
+#download-vscode {
+    background-color: var(--tkvsc-primary);
+    color: #0f0e0e;
+}
+
+#download-main:hover,
+#download-windows:hover,
+#download-vscode:hover {
+    background-color: var(--tkvsc-highlight);
+    color: #0f0e0e;
+}
+
+#download-src {
+    background-color: #1a1817;
+    color: #c9c4bf;
+    border-color: #3a3532;
+}
+
+#download-src:hover {
+    color: #ffffff;
+}
+
+.alert {
+    background: rgba(0, 0, 0, 0.25);
+    color: var(--bs-body-color);
+}
+
+.TIP {
+    border-color: var(--alert-tip-color);
+}
+
+.TIP h5 {
+    color: var(--alert-tip-color);
+}
+
+.INFO,
+.NOTE {
+    border-color: var(--alert-info-color);
+}
+
+.INFO h5,
+.NOTE h5 {
+    color: var(--alert-info-color);
+}
+
+.TIP h5:before,
+.TIP .h5:before {
+    content: "\f46B";
+}
+
+.alert-warning {
+    border-color: var(--alert-warn-color);
+}
+
+.alert-warning h5 {
+    color: var(--alert-warn-color);
+}
+
+.alert-danger {
+    border-color: var(--alert-danger-color);
+}
+
+.alert-danger h5 {
+    color: var(--alert-danger-color);
+}
+
+.IMPORTANT {
+    border-color: var(--alert-important-color);
+}
+
+.IMPORTANT h5 {
+    color: var(--alert-important-color);
+}
+
+kbd {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--bs-body-color) !important;
+    border: solid 1px var(--bs-border-color);
+    border-bottom-color: var(--bs-border-color);
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 var(--bs-border-color);
+    padding: .2rem .4rem;
+    font-family: var(--tkvsc-font-brand);
+    font-weight: 700;
+}
+
+.btn-primary,
+.pagination .active > .page-link {
+    background-color: var(--tkvsc-primary);
+    border-color: var(--tkvsc-shadow);
+    color: #0f0e0e;
+}
+
+.btn-primary:hover {
+    background-color: var(--tkvsc-highlight);
+    border-color: var(--tkvsc-primary);
+    color: #0f0e0e;
+}
+
+.form-control:focus {
+    border-color: var(--tkvsc-primary);
+    box-shadow: 0 0 0 0.2rem rgba(212, 102, 53, 0.25);
+}

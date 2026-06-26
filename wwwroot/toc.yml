@@ -1,0 +1,8 @@
+- name: Downloads
+  href: downloads/index.md
+- name: Documentation
+  href: docs/index.md
+- name: FAQ
+  href: faq/index.md
+- name: About
+  href: about/index.md
