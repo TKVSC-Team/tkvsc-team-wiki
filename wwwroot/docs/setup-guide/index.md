@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Already have installed [VS Code](https://code.visualstudio.com/download)
-- Installed [Python 3.12](https://www.python.org/downloads/release/python-31210/)
+- Installed [Python 3.13 or newer](https://www.python.org/downloads/)
 - Already have a [RomFS Dump](https://github.com/TKVSC-Team/totk-vscode/wiki/001---Game-Dump-Guide) of TOTK
 
 
