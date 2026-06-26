@@ -1,0 +1,8 @@
+- name: Overview
+  href: index.md
+- name: Setup Guide
+  href: setup-guide/index.md
+- name: Game Dump Guide
+  href: game-dump-guide/index.md
+- name: Simple Attribute Mod
+  href: simple-attribute-mod/index.md

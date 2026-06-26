@@ -1,7 +1,7 @@
 - name: Downloads
   href: downloads/index.md
 - name: Documentation
-  href: docs/index.md
+  href: docs/
 - name: FAQ
   href: faq/index.md
 - name: About
