@@ -34,11 +34,11 @@
     "globalMetadata": {
       "_appName": "TKVSC",
       "_appTitle": "TKVSC",
+      "description": "The official TKVSC Wiki",
       "_enableSearch": true,
       "_appLogoPath": "logo.png",
       "_appFaviconPath": "favicon.ico",
       "_appFooter": "<footer id=\"copyright\">© TKVSC-Team under the GPLv3 License</footer>",
-      "pdf": true
     },
     "postProcessors": [
       "ExtractSearchIndex"
