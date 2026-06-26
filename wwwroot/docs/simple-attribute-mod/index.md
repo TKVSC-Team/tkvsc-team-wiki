@@ -4,9 +4,9 @@ I've been creating mods for Tears of the Kingdom (**TOTK**) since it first launc
 
 ## Requirements
 
-1. Legally acquired [RomFS dump](https://gamebanana.com/tuts/19858) of TOTK
+1. Legally acquired [RomFS dump](https://tkvsc.dev/docs/game-dump-guide/index.html) of TOTK
 2. [Visual Studio Code](https://code.visualstudio.com/download) (VS Code)
-3. [TKVSC](https://github.com/TKVSC-Team/totk-vscode/wiki/002---Setup-Guide)
+3. [TKVSC](https://tkvsc.dev/docs/setup-guide/index.html)
 4. [TKVSC TKMM-CLI Addon](https://github.com/TKVSC-Team/tkvsc-addons/releases/latest)
 
 In this guide, we will create a mod that increases the defense of the base-level Hylian set. Using TKVSC, this will require making changes in 4 files.
