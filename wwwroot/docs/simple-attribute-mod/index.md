@@ -1,13 +1,13 @@
 # Making Your First Mod - Simple Attribute Edit
 
-I've been creating mods for Tears of the Kingdom (**TOTK**) since it first launched in 2023. In the TOTK Modding Hub Discord server, new users will often ask for recommendations on what makes a good first project. My response is always that they should either make a basic texture edit or a basic attribute edit. In this tutorial, I'll be walking through the steps on making a basic attribute edit using the Tears of the Kingdom Visual Studio Code extension (**TKVSC**), and how to package it for release using the Tears of the Kingdom Mod Manager (**TKMM**) addon for TKVSC.
+I've been creating mods for Tears of the Kingdom (**TOTK**) since it first launched in 2023. In the TOTK Modding Hub Discord server, new users will often ask for recommendations on what makes a good first project. My response is always that they should either make a simple texture edit or a simple attribute edit. In this tutorial, I'll be walking through the steps on making a simple attribute edit using the Tears of the Kingdom Visual Studio Code extension (**TKVSC**), and how to package it for release using the Tears of the Kingdom Mod Manager (**TKMM**) addon for TKVSC.
 
 ## Requirements
 
 1. Legally acquired [RomFS dump](https://tkvsc.dev/docs/game-dump-guide/index.html) of TOTK
 2. [Visual Studio Code](https://code.visualstudio.com/download) (VS Code)
 3. [TKVSC](https://tkvsc.dev/docs/setup-guide/index.html)
-4. [TKVSC TKMM-CLI Addon](https://github.com/TKVSC-Team/tkvsc-addons/releases/latest)
+4. [TKVSC TKMM-CLI Addon](https://downloads.tkvsc.dev/addons/tkmm-cli/latest)
 
 In this guide, we will create a mod that increases the defense of the base-level Hylian set. Using TKVSC, this will require making changes in 4 files.
 
