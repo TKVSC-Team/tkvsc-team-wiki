@@ -1,0 +1,1 @@
+docfx build .\wwwroot\docfx.json
