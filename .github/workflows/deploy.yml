@@ -37,6 +37,10 @@ jobs:
           TARGET: ${{ secrets.DEPLOY_TARGET }}
           PORT: ${{ secrets.DEPLOY_PORT }}
         run: |
+          : "${SSH_KEY:?DEPLOY_SSH_KEY secret is not set}"
+          : "${KNOWN_HOSTS:?DEPLOY_KNOWN_HOSTS secret is not set}"
+          : "${TARGET:?DEPLOY_TARGET secret is not set}"
+          : "${PORT:?DEPLOY_PORT secret is not set}"
           mkdir -p ~/.ssh
           printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
