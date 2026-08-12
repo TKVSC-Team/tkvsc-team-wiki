@@ -10,7 +10,7 @@ TKVSC is distributed as a `.vsix` extension package for Visual Studio Code.
 <div id="download-btns">
   <a class="download-btn" id="download-vscode" href="https://github.com/TKVSC-Team/totk-vscode/releases/latest">Latest Release (VSIX)</a>
   <a class="download-btn" id="download-src" href="https://github.com/TKVSC-Team/totk-vscode">Source Code</a>
-  <a class="download-btn" id="download-addon" href="https://github.com/TKVSC-Team/tkvsc-addons/releases/latest">Addons</a>
+  <a class="download-btn" id="download-addon" href="https://tkvsc.dev/addons/index.html">Addons</a>
 </div>
 <br>
 
